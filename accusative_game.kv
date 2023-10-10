@@ -1,0 +1,77 @@
+#:kivy 1.11.1
+<WindowManager>:
+    TitleScreen:
+    LevelSelector:
+    MainScene:
+    CreditsScene:
+<TitleScreen>:
+    name: 'title_screen'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Accusative Case Game'
+            font_size: 30
+        Button:
+            text: 'Start Game'
+            on_release: app.root.current = 'level_selector'
+        Button:
+            text: 'Credits'
+            on_release: app.root.current = 'credits_scene'
+<LevelSelector>:
+    name: 'level_selector'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Select Difficulty Level'
+            font_size: 30
+        Button:
+            text: 'Simple'
+            on_release: app.root.current = 'main_scene'
+        Button:
+            text: 'Normal'
+            on_release: app.root.current = 'main_scene'
+        Button:
+            text: 'Complex'
+            on_release: app.root.current = 'main_scene'
+        Button:
+            text: 'Back'
+            on_release: app.root.current = 'title_screen'
+<MainScene>:
+    name: 'main_scene'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Sentence with Missing Word(s)'
+            font_size: 30
+        GridLayout:
+            cols: 1
+            size_hint_y: None
+            height: self.minimum_height
+            ScrollView:
+                GridLayout:
+                    id: word_layout
+                    cols: 1
+                    size_hint_y: None
+                    height: self.minimum_height
+        Button:
+            text: 'Check Answer'
+            on_release: root.check_answer()
+        Button:
+            text: 'Next Level'
+            on_release: root.next_level()
+        Button:
+            text: 'Back'
+            on_release: app.root.current = 'level_selector'
+<CreditsScene>:
+    name: 'credits_scene'
+    BoxLayout:
+        orientation: 'vertical'
+        Label:
+            text: 'Credits'
+            font_size: 30
+        ScrollView:
+            Label:
+                text: root.get_credits()
+        Button:
+            text: 'Back'
+            on_release: app.root.current = 'title_screen'
