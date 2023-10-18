@@ -1,122 +1,286 @@
 Sentence,Number of Nouns,Positions of Nouns,Total Words,Accusative Nouns
-"""Ili prenas la fotojn""",1,[4],4,fotojn
-"""La auto estas nova""",1,[2],4,
-"""Mi aĉetas la panon""",1,[4],4,panon
-"""Post kiam ni lernis la bazajn regulojn, ni komencis skribi poemojn""",1,[11],11,poemojn
-"""Li estas la plej juna en la familio""",1,[8],8,
-"""En la mateno, mi ĉiam trinkas mian kafojn""",1,[8],8,kafojn
-"""Mi legas la gazeton""",1,[4],4,gazeton
-"""Mi vidas la hundon""",1,[4],4,hundon
-"""Ŝi desegnas la bildojn""",1,[4],4,bildojn
-"""Ili deziras spekti la novan filmon""",1,[6],6,filmon
-"""Ŝi kaptas la pilkon""",1,[4],4,pilkon
-"""Ĉiu dimanĉo, ili vizitas sian avinon""",1,[6],6,avinon
-"""Ni plantas la arbojn""",1,[4],4,arbojn
-"""Ŝi ŝatas kanti kiam la suno leviĝas""",1,[6],7,
-"""Hundoj estas amikaj""",1,[1],3,
-"""Li legas la libron""",1,[4],4,libron
-"""Ŝia plej ŝatata koloro estas verda""",1,[4],6,
-"""Ŝi estas muzikisto""",1,[3],3,
-"""Li portas la sakon""",1,[4],4,sakon
-"""Li portas la ĉapelon""",1,[4],4,ĉapelon
-"""Ĉielo estas blua""",1,[1],3,
-"""La birdoj kantas""",1,[2],3,
-"""Ŝia kanto estas belsona""",1,[2],4,
-"""Ni kolektas la florojn""",1,[4],4,florojn
-"""Ĉiu vintro, ni vizitas nian familian kabanon""",1,[7],7,kabanon
-"""Ili rigardas la filmojn""",1,[4],4,filmojn
-"""Ili aŭskultas la muzikon""",1,[4],4,muzikon
-"""La herbo estas verda""",1,[2],4,
-"""Post la leciono, mi volas manĝi grandan kukon""",1,[8],8,kukon
-"""Ili kantas la kantojn""",1,[4],4,kantojn
-"""Printempo venas baldaŭ""",1,[1],3,
-"""Ŝi estis tre feliĉa kaj saltis sur la plaĝon""",1,[9],9,plaĝon
+"""Ŝi pendigis veston""",1,[3],3,veston
+"""La telefono sonoris""",1,[2],3,
+"""La teo varmiĝas""",1,[2],3,
 """Kvankam mi laboris tutan tagon, mi ankoraŭ prenis mian libron kaj legis""",1,[10],12,libron
-"""La maro estas profunda""",1,[2],4,
-"""La suno brilas""",1,[2],3,
-"""Ŝi manĝas la pomon""",1,[4],4,pomon
+"""Mi portas ĉapelon""",1,[3],3,ĉapelon
+"""La krajono rompiĝas""",1,[2],3,
+"""Ŝi trinkas vinon""",1,[3],3,vinon
+"""La arbo ombras""",1,[2],3,
+"""Vi ĉiam preferas tiun""",1,[4],4,tiun
 """La libro estas interesa""",1,[2],4,
-"""Li estas studento""",1,[3],3,
-"""La domo estas granda""",1,[2],4,
-"""La luno brilas""",1,[2],3,
-"""Malgraŭ la pluvo, ni decidis viziti la muzeon""",1,[8],8,muzeon
-"""Vintro estas malvarma""",1,[1],3,
-"""La steloj brilas""",1,[2],3,
-"""Nia domo estas granda""",1,[2],4,
-"""Li serĉas la ŝlosilon""",1,[4],4,ŝlosilon
-"""Ni amas la katojn""",1,[4],4,katojn
-"""Malgraŭ sia timo, ŝi saltis de la altponton""",1,[8],8,altponton
-"""Ni ludas kun la infanojn""",1,[5],5,infanojn
-"""Li estas profesoro""",1,[3],3,
-"""Ŝi trinkas la lakton""",1,[4],4,lakton
+"""Ŝi estis tre feliĉa kaj saltis sur la plaĝon""",1,[9],9,plaĝon
+"""La vento blovas""",1,[2],3,
+"""En la muzeo, mi vidis pentraĵon, skulptaĵon, kaj fotografaĵon""",1,[9],9,fotografaĵon
+"""Hundoj estas amikaj""",1,[1],3,
+"""La suno brilas""",1,[2],3,
+"""La neĝo blankas""",1,[2],3,
+"""Vi surprizis nin""",1,[3],3,nin
+"""En la mateno, mi ĉiam trinkas mian kafojn""",1,[8],8,kafojn
+"""Ŝi desegnas domon""",1,[3],3,domon
+"""La ŝipo glitas""",1,[2],3,
 """Mi havas la bildon""",1,[4],4,bildon
-"""Ili estas feliĉaj""",0,[],3,
-"""Ŝi estas bela""",0,[],3,
-"""""",0,[],0,
-"""Ni planas organizi feston por niaj geamikojn""",2,"[4, 7]",7,"feston, geamikojn"
-"""Dum la leciono, ŝi skribis notojn kaj aŭskultis la instruiston""",2,"[6, 10]",10,"notojn, instruiston"
-"""La domo kun la ruĝa tegmento apartenas al ŝi""",2,"[2, 6]",9,
-"""Ni kuiris kaj manĝis paston kune en la domo""",2,"[5, 9]",9,paston
-"""Kiam li aŭdis la novaĵon, li tuj aĉetis bileton kaj flugis al Parizo""",2,"[9, 13]",13,bileton
-"""Ili volas studi ĉe la universitato en Parizo""",2,"[6, 8]",8,
-"""Ŝi ĉiam sonĝis pri vojaĝado al tiu eksterlandon""",2,"[5, 8]",8,eksterlandon
-"""Kiam la vespero alvenis, ŝi trankviliĝis kaj legis fabelon""",2,"[3, 9]",9,fabelon
-"""Kvankam ili estis okupitaj, ili trovis tempon kaj ludis kartojn""",2,"[7, 10]",10,"tempon, kartojn"
-"""Ŝi helpis homojn kaj donis monon""",2,"[3, 6]",6,"homojn, monon"
-"""Ni ofte aĉetas legomojn el la loka merkaton""",2,"[4, 8]",8,"legomojn, merkaton"
-"""Li promenis en la arbaro kaj kolektis fruktojn""",2,"[5, 8]",8,fruktojn
-"""La vetero estas tre varma en la somero""",2,"[2, 8]",8,
-"""La knabino el Brazilo estas tre amika""",2,"[2, 4]",7,
-"""Ĉar ŝi amas la muzikon, ŝi aŭskultis kantojn kaj lernis gitaron""",2,"[8, 11]",11,"kantojn, gitaron"
-"""Kvankam la filmo estis longa, ni ĝuis ĝin kaj diskutis scenojn""",2,"[3, 11]",11,scenojn
-"""Ŝi veturis tra la tuta lando por vidi tiun monumenton""",2,"[6, 10]",10,monumenton
-"""Ili vojaĝis tra multaj landoj kaj kolektis suvenirojn""",2,"[5, 8]",8,suvenirojn
-"""La granda hotelo en la centro estas tre fama""",2,"[3, 6]",9,
-"""Dum ili promenis en la parko, ili vidis birdojn kaj kolektis florojn""",2,"[9, 12]",12,"birdojn, florojn"
-"""Ŝi estas konata pro sia talenta voĉo""",2,"[4, 7]",7,
-"""Li lernis kantadon kaj ludis gitaron""",2,"[3, 6]",6,"kantadon, gitaron"
-"""Kvankam la vojo estis malfacila, ni marŝis kaj atingis la pinton""",2,"[3, 11]",11,pinton
-"""Post kiam la suno leviĝis, li meditis kaj ekzercis sur la monton""",2,"[4, 12]",12,monton
-"""Li ĉiam sonĝas pri vojaĝado ĉirkaŭ la mondo""",2,"[5, 8]",8,
-"""La montoj en tiu regiono estas tre altaj""",2,"[2, 5]",8,
-"""Ŝi desegnis bildon dum ŝi aŭskultis muzikon""",2,"[3, 7]",7,"bildon, muzikon"
-"""Dum li aŭskultis radion, li lernis novaĵojn kaj aŭdis muzikon""",2,"[7, 10]",10,"novaĵojn, muzikon"
-"""La ĉielo ĉiam ŝajnas pli blua post la pluvo""",2,"[2, 9]",9,
-"""Antaŭ ol ŝi ekdormis, ŝi skribis taglibron kaj memoris revojn""",2,"[7, 10]",10,"taglibron, revojn"
-"""Antaŭ ol ŝi iris al la lernejo, ŝi donis panon al siaj fratoj""",2,"[10, 13]",13,panon
-"""Ili planas festi sian unuan datrevenon en tiu restoracion""",2,"[6, 9]",9,"datrevenon, restoracion"
+"""Ŝi serĉas monujon""",1,[3],3,monujon
+"""Ni amas la katojn""",1,[4],4,katojn
+"""Post kiam ni lernis la bazajn regulojn, ni komencis skribi poemojn""",1,[11],11,poemojn
+"""La birdo kantas""",1,[2],3,
+"""En la kafejo, oni povas aĉeti kafo, teo, kaj kuko""",1,[10],10,
+"""Mi vidas la hundon""",1,[4],4,hundon
+"""Ŝi estas muzikisto""",1,[3],3,
+"""La luno brilas""",1,[2],3,
+"""Ili rigardas la filmojn""",1,[4],4,filmojn
+"""Mi mangxas glacion""",1,[3],3,glacion
+"""La kato ronronas""",1,[2],3,
+"""Malgraŭ sia timo, ŝi saltis de la altponton""",1,[8],8,altponton
+"""La monto altas""",1,[2],3,
+"""La kuko dolĉas""",1,[2],3,
+"""Mi elektis tiun ĉi""",1,[3],4,tiun
+"""La birdoj kantas""",1,[2],3,
+"""La fenestro malfermiĝas""",1,[2],3,
+"""Mi kredas lin""",1,[3],3,lin
+"""La lampo lumigas""",1,[2],3,
+"""La muziko sonas""",1,[2],3,
+"""La panjo ridas""",1,[2],3,
+"""Li vidis birdon""",1,[3],3,birdon
+"""Mi metis la posxtelefonon""",1,[4],4,posxtelefonon
+"""La luno lumas""",1,[2],3,
+"""La ĉielo bluas""",1,[2],3,
+"""La ŝtrumpo ŝiriĝas""",1,[2],3,
+"""Ĉiu dimanĉo, ili vizitas sian avinon""",1,[6],6,avinon
+"""Ŝi donis floron""",1,[3],3,floron
+"""Ni amas vin""",1,[3],3,vin
+"""La fiŝo naĝas""",1,[2],3,
+"""Li ĉirkaŭprenis amikon""",1,[3],3,amikon
+"""Mi ludas futbalon""",1,[3],3,futbalon
+"""La nubo moviĝas""",1,[2],3,
+"""Li ĉasas leporon""",1,[3],3,leporon
+"""Mi lavis auto""",1,[3],3,
+"""Ŝi trinkas la lakton""",1,[4],4,lakton
+"""La radio ludas""",1,[2],3,
+"""Li portas valizon""",1,[3],3,valizon
+"""Mi aŭdas muzikon""",1,[3],3,muzikon
+"""Li tuŝis katon""",1,[3],3,katon
+"""Mi legas libron""",1,[3],3,libron
+"""En la aŭto, mi metis mian sakon, mapon, kaj poŝtelefono""",1,[10],10,
+"""La letro rulas""",1,[2],3,
+"""La horloĝo tikas""",1,[2],3,
+"""La floro odoras""",1,[2],3,
+"""Li estas profesoro""",1,[3],3,
+"""Ŝia kanto estas belsona""",1,[2],4,
+"""Ni ludas kun la infanojn""",1,[5],5,infanojn
+"""Ili prenas la fotojn""",1,[4],4,fotojn
+"""En la zoologio, mi vidis elefanton, tigron, kaj papagajon""",1,[9],9,papagajon
+"""Li estas studento""",1,[3],3,
+"""Mi ĵetas ŝtonon""",1,[3],3,ŝtonon
+"""Ili aŭskultas la muzikon""",1,[4],4,muzikon
+"""Ŝi desegnas la bildojn""",1,[4],4,bildojn
+"""Li dormas sur tapiŝon""",1,[4],4,tapiŝon
+"""En la muzikvideo, oni vidas dancantojn, muzikistojn, kaj kantiston""",1,[9],9,kantiston
+"""Li portas la ĉapelon""",1,[4],4,ĉapelon
+"""La papero flugas""",1,[2],3,
+"""Li vidas min""",1,[3],3,min
+"""Vintro estas malvarma""",1,[1],3,
+"""La mono sonas""",1,[2],3,
+"""Li komprenas vin""",1,[3],3,vin
+"""La suno brilas""",1,[2],3,
+"""Ŝi provis kukon""",1,[3],3,kukon
+"""La domo estas granda""",1,[2],4,
+"""Malgraŭ la pluvo, ni decidis viziti la muzeon""",1,[8],8,muzeon
+"""La libro fermiĝas""",1,[2],3,
+"""La arbusto kreskas""",1,[2],3,
+"""En la poŝo, ŝi havas monon, ŝlosilon, kaj spegulon""",1,[9],9,spegulon
+"""La herbo estas verda""",1,[2],4,
+"""Li portas la sakon""",1,[4],4,sakon
+"""Li serĉas tiun""",1,[3],3,tiun
+"""La steloj brilas""",1,[2],3,
+"""Ili deziras spekti la novan filmon""",1,[6],6,filmon
+"""Ŝi petis helpon""",1,[3],3,helpon
+"""Mi aĉetas la panon""",1,[4],4,panon
+"""Mi vidas hundon""",1,[3],3,hundon
+"""Ŝi aĉetis pomon""",1,[3],3,pomon
+"""Li kuiras supon""",1,[3],3,supon
+"""En la haveno, oni vidas ŝipojn, boatojn, kaj maron""",1,[9],9,maron
+"""Ŝi amas ĉokoladon""",1,[3],3,ĉokoladon
+"""En la botiko, li aĉetis ĉapelon, ŝuojn, kaj ĉemizon""",1,[9],9,ĉemizon
+"""Ŝi paŝas sur vojon""",1,[4],4,vojon
+"""Mi legas la gazeton""",1,[4],4,gazeton
+"""Li kantas kanton""",1,[3],3,kanton
+"""Ili kantas la kantojn""",1,[4],4,kantojn
+"""La hundo bojas""",1,[2],3,
+"""La radio bruis""",1,[2],3,
+"""Ŝi manĝas la pomon""",1,[4],4,pomon
+"""Ni kolektas la florojn""",1,[4],4,florojn
+"""Ŝi aĉetis libron, plumon, kaj paperon""",1,[6],6,paperon
+"""Li skribas leteron""",1,[3],3,leteron
+"""La amiko venas""",1,[2],3,
+"""Ŝi metis bieron""",1,[3],3,bieron
+"""Li volas tiun""",1,[3],3,tiun
+"""Li ĵetas pilkon""",1,[3],3,pilkon
+"""Ĉielo estas blua""",1,[1],3,
+"""Mi forigis eraron""",1,[3],3,eraron
+"""La bildo pendis""",1,[2],3,
+"""La pordo fermiĝas""",1,[2],3,
+"""Ŝi invitos duonon""",1,[3],3,duonon
+"""Ŝi ŝatas kanti kiam la suno leviĝas""",1,[6],7,
+"""Mi prenas paperon""",1,[3],3,paperon
+"""Ŝi renkontis nin""",1,[3],3,nin
+"""Ŝia plej ŝatata koloro estas verda""",1,[4],6,
+"""Ŝi rigardas bildon""",1,[3],3,bildon
+"""Ni plantas la arbojn""",1,[4],4,arbojn
+"""Mi aĉetis teon""",1,[3],3,teon
+"""Li manĝas kukon""",1,[3],3,kukon
+"""Nia domo estas granda""",1,[2],4,
+"""Ŝi vokas doktoron""",1,[3],3,doktoron
+"""Ŝi kaptas la pilkon""",1,[4],4,pilkon
+"""Li batis mian sur tablon""",1,[5],5,tablon
+"""Li serĉas la ŝlosilon""",1,[4],4,ŝlosilon
+"""Post la leciono, mi volas manĝi grandan kukon""",1,[8],8,kukon
+"""Ŝi malfermas pordon""",1,[3],3,pordon
+"""Ĉiu vintro, ni vizitas nian familian kabanon""",1,[7],7,kabanon
+"""La inko sekas""",1,[2],3,
+"""La pilko saltas""",1,[2],3,
+"""La stelo scintilas""",1,[2],3,
+"""La pluvo pluvas""",1,[2],3,
+"""La pomo falas""",1,[2],3,
+"""Li falis sur plankon""",1,[4],4,plankon
+"""En la borsaĵo, ŝi havas poŝtelefono, monujon, kaj okulvitrojn""",1,[9],9,okulvitrojn
+"""La maro estas profunda""",1,[2],4,
+"""Printempo venas baldaŭ""",1,[1],3,
+"""La televido montras""",1,[2],3,
+"""Mi uzas komputilon""",1,[3],3,komputilon
+"""Li legas la libron""",1,[4],4,libron
+"""Li estas la plej juna en la familio""",1,[8],8,
+"""La auto estas nova""",1,[2],4,
+"""La ĉevalo manĝas la herbon""",2,"[2, 5]",5,herbon
+"""La maristo nagas en la maro""",2,"[2, 6]",6,
 """Ĉar li ne havis tempon, li sendis leteron anstataŭ viziti sian avinon""",2,"[8, 12]",12,"leteron, avinon"
-"""Li ofte aĉetas donacojn por siaj nevojn""",2,"[4, 7]",7,"donacojn, nevojn"
-"""En la somero, multaj turistoj vizitas nian urbon""",2,"[5, 8]",8,urbon
-"""Ni vizitis muzeojn kaj vidis pentraĵojn""",2,"[3, 6]",6,"muzeojn, pentraĵojn"
-"""Ŝi skribis longan leteron al sia kuzon""",2,"[4, 7]",7,"leteron, kuzon"
-"""Mi skribis leteron kaj sendis ĝin per poŝto""",2,"[3, 8]",8,leteron
-"""Ŝiaj kantoj inspiras multajn homojn""",2,"[2, 5]",5,homojn
-"""Li prenis libron de la breto kaj komencis legi""",2,"[3, 6]",9,libron
-"""La arboj en la arbaro estas tre malnovaj""",2,"[2, 5]",8,
-"""Li skribis rakonton kaj sendis ĝin al konkurso""",2,"[3, 8]",8,rakonton
-"""Kiam ŝi estis juna, ŝi vizitis lokojn kaj kolektis bildojn""",2,"[7, 10]",10,"lokojn, bildojn"
-"""Ŝi ŝatas promeni en la parko kun siaj hundojn""",2,"[6, 9]",9,hundojn
+"""La kuiristo preparas la manĝon""",2,"[2, 5]",5,manĝon
+"""Li promenis en la arbaro kaj kolektis fruktojn""",2,"[5, 8]",8,fruktojn
+"""La aviadilo transportas la pasaĝerojn""",2,"[2, 5]",5,pasaĝerojn
+"""La domo kun la ruĝa tegmento apartenas al ŝi""",2,"[2, 6]",9,
+"""La fiesta vespero enhavis kantojn, dancadojn, kaj ridojn""",2,"[3, 8]",8,ridojn
+"""La aktoro rolas en la teatro""",2,"[2, 6]",6,
+"""La poeto skribis pri la steloj, luno, kaj suno""",2,"[2, 9]",9,
+"""Ŝi fotis la kaskadon, monton, kaj valon dum sia vojaĝo""",2,"[7, 10]",10,valon
+"""La granda hotelo en la centro estas tre fama""",2,"[3, 6]",9,
+"""La patrino kisas la infaneton""",2,"[2, 5]",5,infaneton
 """Ni spertos multajn novajn aventurojn dum nia vojaĝon""",2,"[5, 8]",8,"aventurojn, vojaĝon"
+"""La aviadilo flugis super la urbo, rivero, kaj arbaro""",2,"[2, 9]",9,
+"""Li skribis rakonton kaj sendis ĝin al konkurso""",2,"[3, 8]",8,rakonton
+"""Antaŭ ol ŝi iris al la lernejo, ŝi donis panon al siaj fratoj""",2,"[10, 13]",13,panon
+"""La arboj donas ombrojn, fruktojn, kaj foliojn""",2,"[2, 7]",7,foliojn
+"""La hundo ĉasas la katon""",2,"[2, 5]",5,katon
+"""Li ĉiam sonĝas pri vojaĝado ĉirkaŭ la mondo""",2,"[5, 8]",8,
+"""La verkisto publikigas la romano""",2,"[2, 5]",5,
+"""La ĉielo ĉiam ŝajnas pli blua post la pluvo""",2,"[2, 9]",9,
+"""La fermisto malsuprenigas la fenestron""",2,"[2, 5]",5,fenestron
+"""La mekaniko riparas la aŭton""",2,"[2, 5]",5,aŭton
+"""La botisto faras la ŝuojn""",2,"[2, 5]",5,ŝuojn
+"""En la kastelo estas multaj ĉambroj, koridoroj, kaj turegoj""",2,"[3, 9]",9,
+"""La luno brilas super la lago""",2,"[2, 6]",6,
+"""En la skatolo estas pilko, ŝnurego, kaj ringo""",2,"[3, 8]",8,
 """Kiam la pluvo komencis, ni kuris kaj serĉis tegmenton""",2,"[3, 9]",9,tegmenton
+"""La knabino el Brazilo estas tre amika""",2,"[2, 4]",7,
+"""La muzikisto ludas la violinon""",2,"[2, 5]",5,violinon
+"""La ĝardenisto zorgas pri la floroj""",2,"[2, 6]",6,
+"""La pianisto ludas la klavaron""",2,"[2, 5]",5,klavaron
+"""La soldato portas la pafilon""",2,"[2, 5]",5,pafilon
+"""La reĝo regas la landon""",2,"[2, 5]",5,landon
+"""La ĝurnalisto intervjuas la prezidenton""",2,"[2, 5]",5,prezidenton
+"""La arboj en la arbaro estas tre malnovaj""",2,"[2, 5]",8,
+"""Mi skribis leteron kaj sendis ĝin per poŝto""",2,"[3, 8]",8,leteron
+"""En la ĝardeno kreskas floroj, arboj, kaj herboj""",2,"[3, 8]",8,
+"""La vetero estas tre varma en la somero""",2,"[2, 8]",8,
+"""Post kiam la suno leviĝis, li meditis kaj ekzercis sur la monton""",2,"[4, 12]",12,monton
+"""La infano kolektas la ŝelojn""",2,"[2, 5]",5,ŝelojn
+"""La birdo flugas super la arbo""",2,"[2, 6]",6,
+"""Ni vizitis muzeojn kaj vidis pentraĵojn""",2,"[3, 6]",6,"muzeojn, pentraĵojn"
+"""Kvankam la vojo estis malfacila, ni marŝis kaj atingis la pinton""",2,"[3, 11]",11,pinton
+"""La detektivo esploras la misteron""",2,"[2, 5]",5,misteron
+"""La muzikisto ludas la gitaron""",2,"[2, 5]",5,gitaron
+"""La dentisto kontrolas la dentojn""",2,"[2, 5]",5,dentojn
+"""Ni kuiris kaj manĝis paston kune en la domo""",2,"[5, 9]",9,paston
+"""Ili planas festi sian unuan datrevenon en tiu restoracion""",2,"[6, 9]",9,"datrevenon, restoracion"
+"""Ŝi estas konata pro sia talenta voĉo""",2,"[4, 7]",7,
+"""La filmo montris dezerton, lageton, kaj piramidon""",2,"[2, 7]",7,piramidon
+"""La studento skribas la eseo""",2,"[2, 5]",5,
+"""La montoj en tiu regiono estas tre altaj""",2,"[2, 5]",8,
+"""La artisto pentras la pejzaĝon""",2,"[2, 5]",5,pejzaĝon
+"""Kiam ŝi estis juna, ŝi vizitis lokojn kaj kolektis bildojn""",2,"[7, 10]",10,"lokojn, bildojn"
+"""Dum ili promenis en la parko, ili vidis birdojn kaj kolektis florojn""",2,"[9, 12]",12,"birdojn, florojn"
+"""Li ofte aĉetas donacojn por siaj nevojn""",2,"[4, 7]",7,"donacojn, nevojn"
+"""Ŝi ĉiam sonĝis pri vojaĝado al tiu eksterlandon""",2,"[5, 8]",8,eksterlandon
+"""La laboristo uzis martelon, najlojn, kaj tabulon""",2,"[2, 7]",7,tabulon
+"""La doktoro donis al mi pilolojn, sirupon, kaj konsilojn""",2,"[2, 9]",9,konsilojn
+"""La doktoro kuracas la pacienton""",2,"[2, 5]",5,pacienton
+"""Dum la leciono, ŝi skribis notojn kaj aŭskultis la instruiston""",2,"[6, 10]",10,"notojn, instruiston"
+"""Li lernis kantadon kaj ludis gitaron""",2,"[3, 6]",6,"kantadon, gitaron"
+"""La turisto vizitas la muzeon""",2,"[2, 5]",5,muzeon
+"""La astronomo studas la stelojn""",2,"[2, 5]",5,stelojn
 """Ni vojaĝos al Francio venontan monaton""",2,"[4, 6]",6,monaton
-"""Ni spektis filmojn kun niaj amikoj dum la ferioj""",3,"[3, 6, 9]",9,filmojn
-"""Ni ludis futbalon en la parko kun niaj kolegoj""",3,"[3, 6, 9]",9,futbalon
-"""Ni kaptis fiŝojn en la lago proksime de nia domo""",3,"[3, 6, 10]",10,fiŝojn
-"""La lernejo estas fermita pro la ferioj""",3,"[2, 5, 7]",7,
-"""Mi preparis vespermanĝon por mia familio en la kuirejo""",3,"[3, 6, 9]",9,vespermanĝon
+"""La reĝo havis kronon, septro, kaj mantelon""",2,"[2, 7]",7,mantelon
+"""Kiam la vespero alvenis, ŝi trankviliĝis kaj legis fabelon""",2,"[3, 9]",9,fabelon
+"""Ni ofte aĉetas legomojn el la loka merkaton""",2,"[4, 8]",8,"legomojn, merkaton"
+"""La vendedoro vendas la fruktojn""",2,"[2, 5]",5,fruktojn
+"""Ŝi ŝatas promeni en la parko kun siaj hundojn""",2,"[6, 9]",9,hundojn
+"""Antaŭ ol ŝi ekdormis, ŝi skribis taglibron kaj memoris revojn""",2,"[7, 10]",10,"taglibron, revojn"
+"""Ŝi helpis homojn kaj donis monon""",2,"[3, 6]",6,"homojn, monon"
+"""La profesoro enketas la historion""",2,"[2, 5]",5,historion
+"""La artikolo diskutas politikon, ekonomion, kaj kulturon""",2,"[2, 7]",7,kulturon
+"""La fotisto fotas la monton""",2,"[2, 5]",5,monton
+"""Ni planas organizi feston por niaj geamikojn""",2,"[4, 7]",7,"feston, geamikojn"
+"""Ŝi skribis longan leteron al sia kuzon""",2,"[4, 7]",7,"leteron, kuzon"
+"""Mia amiko havas hundon, birdon, kaj fiŝon""",2,"[2, 7]",7,fiŝon
+"""Sur la ĉielo brilas la suno, nuboj, kaj birdoj""",2,"[3, 9]",9,
+"""La sportisto ludas la futbalon""",2,"[2, 5]",5,futbalon
+"""Ili volas studi ĉe la universitato en Parizo""",2,"[6, 8]",8,
+"""Ĉar ŝi amas la muzikon, ŝi aŭskultis kantojn kaj lernis gitaron""",2,"[8, 11]",11,"kantojn, gitaron"
+"""Dum li aŭskultis radion, li lernis novaĵojn kaj aŭdis muzikon""",2,"[7, 10]",10,"novaĵojn, muzikon"
+"""Kiam li aŭdis la novaĵon, li tuj aĉetis bileton kaj flugis al Parizo""",2,"[9, 13]",13,bileton
+"""La bakisto faras la panon""",2,"[2, 5]",5,panon
+"""La piloto flugas la helikopteron""",2,"[2, 5]",5,helikopteron
+"""Ili vojaĝis tra multaj landoj kaj kolektis suvenirojn""",2,"[5, 8]",8,suvenirojn
+"""La ĉefurbo havas palacojn, placojn, kaj statuojn""",2,"[2, 7]",7,statuojn
+"""Li prenis libron de la breto kaj komencis legi""",2,"[3, 6]",9,libron
+"""La instruisto instruas la lernantojn""",2,"[2, 5]",5,lernantojn
+"""Ŝiaj kantoj inspiras multajn homojn""",2,"[2, 5]",5,homojn
+"""Kvankam ili estis okupitaj, ili trovis tempon kaj ludis kartojn""",2,"[7, 10]",10,"tempon, kartojn"
+"""La knabo legas la libron""",2,"[2, 5]",5,libron
+"""Kvankam la filmo estis longa, ni ĝuis ĝin kaj diskutis scenojn""",2,"[3, 11]",11,scenojn
+"""La poeto skribas la poemon""",2,"[2, 5]",5,poemon
+"""Ŝi desegnis bildon dum ŝi aŭskultis muzikon""",2,"[3, 7]",7,"bildon, muzikon"
+"""La restoracio servas fiŝon, viandon, kaj legomojn""",2,"[2, 7]",7,legomojn
+"""La fiŝo ĉasas la planktonon""",2,"[2, 5]",5,planktonon
+"""En la somero, multaj turistoj vizitas nian urbon""",2,"[5, 8]",8,urbon
 """Ili aĉetis biletojn por la koncerto en la teatro""",3,"[3, 6, 9]",9,biletojn
-"""Ŝi donis pomon al la knabo ĉe la pordo""",3,"[3, 6, 9]",9,pomon
-"""Mi sendis leteron al mia instruisto post la leciono""",3,"[3, 6, 9]",9,leteron
-"""Antaŭ ol la festo komenciĝis, ili aĉetis manĝaĵojn kaj trinkaĵojn""",3,"[4, 8, 10]",10,"manĝaĵojn, trinkaĵojn"
-"""La knabino kun la bluaj okuloj estas mia kuzino""",3,"[2, 6, 9]",9,
-"""Ĉar la knabo estis malsata, li manĝis panon kaj trinkis sukon""",3,"[3, 8, 11]",11,"panon, sukon"
-"""La knabo kun la grandaj okuloj kaptis la flugantan pilkon""",3,"[2, 6, 10]",10,pilkon
-"""Kiam la suno subiris, ni sidis ĉe la fajro kaj rakontis historiojn""",3,"[3, 9, 12]",12,historiojn
-"""Li ofte vojaĝas al fremdaj landoj pro sia laboron""",3,"[6, 7, 9]",9,laboron
-"""La knabo kun la ruĝa ĉapelo estas mia frato""",3,"[2, 6, 9]",9,
-"""Li skribas artikolon pri la influo de sociaj retojn""",3,"[3, 6, 9]",9,"artikolon, retojn"
-"""La infanoj ludis en la ĝardeno kun la novajn ludilojn""",3,"[2, 6, 10]",10,ludilojn
-"""Ŝi trinkis teon kaj legas ĵurnalon en la mateno""",3,"[3, 6, 9]",9,"teon, ĵurnalon"
-"""La kafejo apud la rivero estas mia preferata loko""",3,"[2, 5, 9]",9,
+"""La kato kaptis muson en la domo""",3,"[2, 4, 7]",7,muson
 """Ili lernis Esperanton por komuniki kun homoj el aliaj landoj""",3,"[3, 7, 10]",10,Esperanton
+"""Ŝi veturis tra la tuta lando por vidi tiun monumenton""",3,"[6, 9, 10]",10,"tiun, monumenton"
+"""Mia patrino kuiris supon kun legomoj, viando, kaj nudeloj""",3,"[2, 4, 9]",9,supon
+"""Ĉar la knabo estis malsata, li manĝis panon kaj trinkis sukon""",3,"[3, 8, 11]",11,"panon, sukon"
+"""La kafejo apud la rivero estas mia preferata loko""",3,"[2, 5, 9]",9,
+"""La infanoj ludis en la ĝardeno kun la novajn ludilojn""",3,"[2, 6, 10]",10,ludilojn
+"""La knabo manĝis panon kun butero""",3,"[2, 4, 6]",6,panon
+"""Kiam la suno subiris, ni sidis ĉe la fajro kaj rakontis historiojn""",3,"[3, 9, 12]",12,historiojn
+"""La knabo kun la grandaj okuloj kaptis la flugantan pilkon""",3,"[2, 6, 10]",10,pilkon
+"""Ŝi trinkis teon kaj legas ĵurnalon en la mateno""",3,"[3, 6, 9]",9,"teon, ĵurnalon"
+"""Mi trinkis teon kun sukero kaj lakto""",3,"[3, 5, 7]",7,teon
+"""Ni kaptis fiŝojn en la lago proksime de nia domo""",3,"[3, 6, 10]",10,fiŝojn
+"""La knabo kun la ruĝa ĉapelo estas mia frato""",3,"[2, 6, 9]",9,
+"""La infano kaj la kuko estas sur la tablo""",3,"[2, 5, 9]",9,
+"""Mi sendis leteron al mia instruisto post la leciono""",3,"[3, 6, 9]",9,leteron
+"""La hotelo ofertas ĉambron kun televido, lito, kaj fenestro""",3,"[2, 4, 9]",9,ĉambron
+"""Ni spektis filmojn kun niaj amikoj dum la ferioj""",3,"[3, 6, 9]",9,filmojn
+"""La studento portas sakon kun libroj, kajeroj, kaj kalkulilo""",3,"[2, 4, 9]",9,sakon
+"""En la parko ludas infanoj kun pilkoj, ŝnuregoj, kaj ludoj""",3,"[3, 5, 10]",10,
+"""La teatro prezentis dramon kun aktoroj, muziko, kaj dekoracioj""",3,"[2, 4, 9]",9,dramon
+"""La infano kolektis ŝtonojn, konkojn, kaj branĉojn sur la plaĝo""",3,"[2, 7, 10]",10,branĉojn
+"""La patro donas la pilkon al la filo""",3,"[2, 5, 8]",8,pilkon
+"""Li ofte vojaĝas al fremdaj landoj pro sia laboron""",3,"[6, 7, 9]",9,laboron
+"""Mi preparis vespermanĝon por mia familio en la kuirejo""",3,"[3, 6, 9]",9,vespermanĝon
+"""Li skribas artikolon pri la influo de sociaj retojn""",3,"[3, 6, 9]",9,"artikolon, retojn"
+"""La knabino kun la bluaj okuloj estas mia kuzino""",3,"[2, 6, 9]",9,
+"""La lernejo estas fermita pro la ferioj""",3,"[2, 5, 7]",7,
+"""Ŝi donis pomon al la knabo ĉe la pordo""",3,"[3, 6, 9]",9,pomon
+"""Antaŭ ol la festo komenciĝis, ili aĉetis manĝaĵojn kaj trinkaĵojn""",3,"[4, 8, 10]",10,"manĝaĵojn, trinkaĵojn"
+"""Ni ludis futbalon en la parko kun niaj kolegoj""",3,"[3, 6, 9]",9,futbalon

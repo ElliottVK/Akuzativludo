@@ -2,15 +2,20 @@ import csv
 import random
 
 def process_text_to_csv(input_text, output_filename):
-    # Split the text into sentences
-    sentences = [sentence.strip() for sentence in input_text.split('.') if sentence]
+    # Split the text into sentences and filter out sentences with question marks
+    sentences = [sentence.strip() for sentence in input_text.split('.') if sentence and '?' not in sentence]
     
     # Define function to count nouns, their positions, and identify accusative nouns in a sentence
     def analyze_sentence(sentence):
         words = sentence.split()
         noun_endings = ["o", "oj", "on", "ojn"]
-        noun_positions = [i+1 for i, word in enumerate(words) if any(word.endswith(ending) for ending in noun_endings)]
-        accusative_nouns = [word for word in words if word.endswith("on") or word.endswith("ojn")]
+        accusative_pronouns = ["lin", "min", "vin", "sin", "nin", "ĉiun", "iun", "tiun", "kiun"]
+        
+        # Including pronouns that end in "n" as nouns
+        noun_positions = [i+1 for i, word in enumerate(words) if any(word.endswith(ending) for ending in noun_endings) or word in accusative_pronouns]
+        
+        # Identifying accusative nouns
+        accusative_nouns = [word for word in words if word.endswith("on") or word.endswith("ojn") or word in accusative_pronouns]
         return len(noun_positions), noun_positions, len(words), accusative_nouns
 
     # Analyze sentences
@@ -20,9 +25,11 @@ def process_text_to_csv(input_text, output_filename):
     grouped_data = {}
     for data in analyzed_data:
         noun_count = data[1]
-        if noun_count not in grouped_data:
-            grouped_data[noun_count] = []
-        grouped_data[noun_count].append(data)
+        if noun_count > 0:
+            if noun_count not in grouped_data:
+                grouped_data[noun_count] = []  # Initialize the key with an empty list
+            grouped_data[noun_count].append(data)
+
     
     for noun_count in grouped_data:
         random.shuffle(grouped_data[noun_count])
@@ -43,7 +50,7 @@ def process_text_to_csv(input_text, output_filename):
 if __name__ == "__main__":
     # Sample text for testing
     sample_text = """
-    Mi vidas la hundon.
+Mi vidas la hundon.
 Ŝi manĝas la pomon.
 Li legas la libron.
 Ni amas la katojn.
@@ -163,6 +170,205 @@ Post kiam la suno leviĝis, li meditis kaj ekzercis sur la monton.
 Kvankam la vojo estis malfacila, ni marŝis kaj atingis la pinton.
 Dum li aŭskultis radion, li lernis novaĵojn kaj aŭdis muzikon.
 Kiam la vespero alvenis, ŝi trankviliĝis kaj legis fabelon.
-    """
+La knabo manĝis panon kun butero.
+Ŝi aĉetis libron, plumon, kaj paperon.
+La kato kaptis muson en la domo.
+En la ĝardeno kreskas floroj, arboj, kaj herboj.
+Mia amiko havas hundon, birdon, kaj fiŝon.
+La instruisto montris bildon de monto kaj rivero.
+En la skatolo estas pilko, ŝnurego, kaj ringo.
+La doktoro donis al mi pilolojn, sirupon, kaj konsilojn.
+En la muzeo, mi vidis pentraĵon, skulptaĵon, kaj fotografaĵon.
+La kuracisto skribis sur paperon kun plumo kaj inko.
+La aviadilo flugis super la urbo, rivero, kaj arbaro.
+Mi trinkis teon kun sukero kaj lakto.
+En la parko ludas infanoj kun pilkoj, ŝnuregoj, kaj ludoj.
+La libro estas sur la tablo apud la lampo kaj horloĝo.
+En la poŝo, ŝi havas monon, ŝlosilon, kaj spegulon.
+Mia patrino kuiris supon kun legomoj, viando, kaj nudeloj.
+En la zoologio, mi vidis elefanton, tigron, kaj papagajon.
+La filmo montris dezerton, lageton, kaj piramidon.
+En la botiko, li aĉetis ĉapelon, ŝuojn, kaj ĉemizon.
+La poeto skribis pri la steloj, luno, kaj suno.
+En la borsaĵo, ŝi havas poŝtelefono, monujon, kaj okulvitrojn.
+La infano kolektis ŝtonojn, konkojn, kaj branĉojn sur la plaĝo.
+La restoracio servas fiŝon, viandon, kaj legomojn.
+La teamo ludis kun pilko sur la kampo kontraŭ la rivalo.
+En la muzikvideo, oni vidas dancantojn, muzikistojn, kaj kantiston.
+Sur la ĉielo brilas la suno, nuboj, kaj birdoj.
+La reĝo havis kronon, septro, kaj mantelon.
+La studento portas sakon kun libroj, kajeroj, kaj kalkulilo.
+Ŝi fotis la kaskadon, monton, kaj valon dum sia vojaĝo.
+La hotelo ofertas ĉambron kun televido, lito, kaj fenestro.
+En la kastelo estas multaj ĉambroj, koridoroj, kaj turegoj.
+La arboj donas ombrojn, fruktojn, kaj foliojn.
+La artikolo diskutas politikon, ekonomion, kaj kulturon.
+En la kafejo, oni povas aĉeti kafo, teo, kaj kuko.
+La teatro prezentis dramon kun aktoroj, muziko, kaj dekoracioj.
+La fiesta vespero enhavis kantojn, dancadojn, kaj ridojn.
+En la haveno, oni vidas ŝipojn, boatojn, kaj maron.
+La ĉefurbo havas palacojn, placojn, kaj statuojn.
+La laboristo uzis martelon, najlojn, kaj tabulon.
+En la aŭto, mi metis mian sakon, mapon, kaj poŝtelefono.
+La hundo bojas.
+La kato ronronas.
+La libro fermiĝas.
+La pomo falas.
+La pluvo pluvas.
+La suno brilas.
+La luno lumas.
+La birdo kantas.
+La fiŝo naĝas.
+La monto altas.
+La horloĝo tikas.
+La floro odoras.
+La ĉielo bluas.
+La vento blovas.
+La stelo scintilas.
+La lampo lumigas.
+La arbusto kreskas.
+La nubo moviĝas.
+La ŝipo glitas.
+La mono sonas.
+La fenestro malfermiĝas.
+La pordo fermiĝas.
+La bildo pendis.
+La arbo ombras.
+La muziko sonas.
+La ŝtrumpo ŝiriĝas.
+La papero flugas.
+La pilko saltas.
+La inko sekas.
+La krajono rompiĝas.
+La panjo ridas.
+La amiko venas.
+La televido montras.
+La telefono sonoris.
+La letro rulas.
+La radio ludas.
+La teo varmiĝas.
+La neĝo blankas.
+La radio bruis.
+La kuko dolĉas.
+La hundo ĉasas la katon.
+La knabo legas la libron.
+La instruisto instruas la lernantojn.
+La birdo flugas super la arbo.
+La patro donas la pilkon al la filo.
+La doktoro kuracas la pacienton.
+La muzikisto ludas la violinon.
+La fiŝo ĉasas la planktonon.
+La artisto pentras la pejzaĝon.
+La ĉevalo manĝas la herbon.
+La ĝardenisto zorgas pri la floroj.
+La bakisto faras la panon.
+La aviadilo transportas la pasaĝerojn.
+La kuiristo preparas la manĝon.
+La vendedoro vendas la fruktojn.
+La poeto skribas la poemon.
+La aktoro rolas en la teatro.
+La sportisto ludas la futbalon.
+La maristo nagas en la maro.
+La fotisto fotas la monton.
+La profesoro enketas la historion.
+La studento skribas la eseo.
+La verkisto publikigas la romano.
+La detektivo esploras la misteron.
+La infano kolektas la ŝelojn.
+La turisto vizitas la muzeon.
+La mekaniko riparas la aŭton.
+La piloto flugas la helikopteron.
+La ĝurnalisto intervjuas la prezidenton.
+La muzikisto ludas la gitaron.
+La fermisto malsuprenigas la fenestron.
+La botisto faras la ŝuojn.
+La infano kaj la kuko estas sur la tablo.
+La pianisto ludas la klavaron.
+La dentisto kontrolas la dentojn.
+La luno brilas super la lago.
+La astronomo studas la stelojn.
+La reĝo regas la landon.
+La patrino kisas la infaneton.
+La soldato portas la pafilon.
+ Mi vidas hundon.
+Ŝi aĉetis pomon.
+Li manĝas kukon.
+Ŝi amas ĉokoladon.
+Mi legas libron.
+Li kantas kanton.
+Ŝi donis floron.
+Mi ludas futbalon.
+Ŝi trinkas vinon.
+Li dormas sur tapiŝon.
+Mi portas ĉapelon.
+Ŝi rigardas bildon.
+Li kuiras supon.
+Mi metis la posxtelefonon.
+Ŝi desegnas domon.
+Li skribas leteron.
+Mi forigis eraron.
+Ŝi petis helpon.
+Li falis sur plankon.
+Mi uzas komputilon.
+Ŝi pendigis veston.
+Li ĵetas pilkon.
+Mi prenas paperon.
+Ŝi serĉas monujon.
+Li vidis birdon.
+Mi aŭdas muzikon.
+Ŝi provis kukon.
+Li tuŝis katon.
+Mi mangxas glacion.
+Ŝi malfermas pordon.
+Li ĉirkaŭprenis amikon.
+Mi lavis auto.
+Ŝi paŝas sur vojon.
+Li batis mian sur tablon.
+Mi ĵetas ŝtonon.
+Ŝi metis bieron.
+Li portas valizon.
+Mi aĉetis teon.
+Ŝi vokas doktoron.
+Li ĉasas leporon.
+Mi amas ŝin.
+Li vidas min.
+Ĉu vi konas ilin?
+Ŝi aŭskultas nin.
+Mi kredas lin.
+Ŝi renkontis nin.
+Li komprenas vin.
+Ĉu vi vidas ĝin?
+Ŝi kisas min.
+Mi invitis ilin.
+Li timas ĝin.
+Vi surprizis nin.
+Mi salutis ŝin.
+Li manĝis du.
+Mi vidis tri el ili.
+Vi devas elekti unu.
+Ŝi portas ambaŭ.
+Ni amas vin.
+Li manĝis ok.
+Ŝi prenis kvar.
+Ĉu vi havas kvin?
+Mi vidis ses.
+Li manĝis sep.
+Mi donis al ŝi dek.
+Ni amegas ilin.
+Vi ĉiam preferas tiun.
+Mi elektis tiun ĉi.
+Li serĉas tiun.
+Vi bezonas tiujn.
+Mi aĉetis tiujn ĉi.
+Li volas tiun.
+Ni adoras tiujn.
+Vi elektos ambaŭ.
+Ŝi invitos duonon.
+Mi vidis neniun.
+Ĉu vi vidos iun?
+Li konas ĉiun.
+Ni amas ĉiujn.
+Ŝi aŭskultis multajn.
+Vi aĉetos plurajn."""
     process_text_to_csv(sample_text, "C:\\Users\\Will\\Documents\\GitHub\\Akuzativludo\\output.csv")
     print("CSV file generated as 'output.csv'")
