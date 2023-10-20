@@ -1,0 +1,168 @@
+[gd_scene load_steps=7 format=3 uid="uid://cx8guegx752os"]
+
+[ext_resource type="Script" path="res://level_select.gd" id="1_81u4q"]
+[ext_resource type="PackedScene" uid="uid://d4hc6forsuv3p" path="res://level_icon.tscn" id="1_f5857"]
+[ext_resource type="Texture2D" uid="uid://bygcgl5x6qjn8" path="res://car spritesheet.png" id="2_0xvn0"]
+
+[sub_resource type="Animation" id="Animation_7jce4"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_0xvn0")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.0001, 0.1, 0.2, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 0, 1, 2, 1]
+}
+
+[sub_resource type="Animation" id="Animation_6nryk"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_0xvn0")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4qm3u"]
+_data = {
+"RESET": SubResource("Animation_6nryk"),
+"idle": SubResource("Animation_7jce4")
+}
+
+[node name="LevelSelect" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_81u4q")
+
+[node name="LevelIcon" parent="." instance=ExtResource("1_f5857")]
+offset_left = 37.0
+offset_top = 466.0
+offset_right = 101.0
+offset_bottom = 528.0
+
+[node name="LevelIcon2" parent="." instance=ExtResource("1_f5857")]
+offset_left = 159.0
+offset_top = 457.0
+offset_right = 223.0
+offset_bottom = 519.0
+
+[node name="LevelIcon3" parent="." instance=ExtResource("1_f5857")]
+offset_left = 258.0
+offset_top = 457.0
+offset_right = 322.0
+offset_bottom = 519.0
+
+[node name="LevelIcon4" parent="." instance=ExtResource("1_f5857")]
+offset_left = 367.0
+offset_top = 477.0
+offset_right = 431.0
+offset_bottom = 539.0
+
+[node name="LevelIcon5" parent="." instance=ExtResource("1_f5857")]
+offset_left = 477.0
+offset_top = 483.0
+offset_right = 541.0
+offset_bottom = 545.0
+
+[node name="LevelIcon6" parent="." instance=ExtResource("1_f5857")]
+offset_left = 480.0
+offset_top = 354.0
+offset_right = 544.0
+offset_bottom = 416.0
+
+[node name="LevelIcon7" parent="." instance=ExtResource("1_f5857")]
+offset_left = 580.0
+offset_top = 347.0
+offset_right = 644.0
+offset_bottom = 409.0
+
+[node name="LevelIcon8" parent="." instance=ExtResource("1_f5857")]
+offset_left = 709.0
+offset_top = 335.0
+offset_right = 773.0
+offset_bottom = 397.0
+
+[node name="LevelIcon9" parent="." instance=ExtResource("1_f5857")]
+offset_left = 809.0
+offset_top = 329.0
+offset_right = 873.0
+offset_bottom = 391.0
+
+[node name="LevelIcon10" parent="." instance=ExtResource("1_f5857")]
+offset_left = 800.0
+offset_top = 205.0
+offset_right = 864.0
+offset_bottom = 267.0
+
+[node name="LevelIcon11" parent="." instance=ExtResource("1_f5857")]
+offset_left = 952.0
+offset_top = 204.0
+offset_right = 1016.0
+offset_bottom = 266.0
+
+[node name="LevelIcon12" parent="." instance=ExtResource("1_f5857")]
+offset_left = 1086.0
+offset_top = 197.0
+offset_right = 1150.0
+offset_bottom = 259.0
+
+[node name="MiniPlayerIcon" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -33.0
+offset_top = -29.0
+offset_right = 31.0
+offset_bottom = 35.0
+pivot_offset = Vector2(32, 32)
+
+[node name="Sprite2D" type="Sprite2D" parent="MiniPlayerIcon"]
+position = Vector2(30, 30)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_0xvn0")
+hframes = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="MiniPlayerIcon"]
+root_node = NodePath("../Sprite2D")
+autoplay = "idle"
+libraries = {
+"": SubResource("AnimationLibrary_4qm3u")
+}

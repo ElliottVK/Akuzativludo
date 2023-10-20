@@ -20,7 +20,7 @@ class MainMenu(Screen):
         super().__init__(**kwargs)
         layout = BoxLayout(orientation='vertical')
         play_button = Button(text="Ludu", size_hint=(0.5, 0.5), pos_hint={"center_x": 0.5, "center_y": 0.5})
-        play_button.bind(on_press=self.change_to_level_selection)
+        play_button.bind(on_press=self.go_to_level_selection)
         layout.add_widget(play_button)
         self.add_widget(layout)
 
@@ -31,7 +31,6 @@ class MainMenu(Screen):
 class LevelSelection(Screen):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
-        layout = BoxLayout(orientation='vertical')
         # This is just a placeholder for now
         label = Label(text="Level Selection - Placeholder")
         layout.add_widget(label)
@@ -51,7 +50,7 @@ class LevelSelection(Screen):
             layout.add_widget(btn)
 
         self.add_widget(layout)
-    car_images = ['00_car.png', '02_car.png', '04_car.png']
+
 
     class AnimatedCar(Image):
         def __init__(self, **kwargs):
@@ -64,22 +63,7 @@ class LevelSelection(Screen):
             self.index = (self.index + 1) % len(car_images)
             self.source = car_images[self.index]
 
-    class Gameplay(Screen):
-        def __init__(self, **kwargs):
-            super().__init__(**kwargs)
-            # Add gameplay elements
-            self.add_widget(Button(text='Back to Level Selection', on_press=self.back_to_levels))
-        
-        def back_to_levels(self, instance):
-            self.manager.current = 'level_selection'
-        class GameApp(App):
-        
-        def build(self):
-            self.load_data()
-            self.root = FloatLayout()
-            self.display_sentence()
-            return self.root
-            sm.current = 'main_menu'
+
 
 
         def load_data(self):
@@ -107,14 +91,7 @@ class LevelSelection(Screen):
                     pos_hint={"x": 0.1 + (0.25 * index), "center_y": 0.5},
                     background_color=(0, 0.6, 0, 1),  # Esperanto green
                 )
-                drop_areas_layout.add_widget(drop_area)
 
-                noun_options_layout = BoxLayout(orientation="vertical", size_hint=(0.2, 0.2),
-                                            pos_hint={"x": 0.1 + (0.25 * index), "bottom": 0.1})
-                drop_areas_layout.add_widget(noun_options_layout)
-                for option in noun_data["word_options"]:
-                    btn = DraggableButton(text=option, size_hint_y=None, height=50)
-                    noun_options_layout.add_widget(btn)
 
         def on_option_select(self, instance):
             # Logic when an option is selected
@@ -130,8 +107,19 @@ class Manager(ScreenManager):
         super().__init__(**kwargs)
         self.add_widget(MainMenu(name="main_menu"))
         self.add_widget(LevelSelection(name="level_selection"))
-    self.add_widget(MainMenu(name="main_menu"))
+        self.add_widget(MainMenu(name="main_menu"))
 
+class Gameplay(Screen):
+    def __init__(self, **kwargs):
+        super().__init__(**kwargs)
+            # Add gameplay elements
+        self.add_widget(Button(text='Back to Level Selection', on_press=self.back_to_levels))
+        
+    def back_to_levels(self, instance):
+        self.manager.current = 'level_selection'
+
+
+car_images = ['00_car.png', '02_car.png', '04_car.png']
 
 # Define the draggable button
 class DraggableButton(DragBehavior, Button):
